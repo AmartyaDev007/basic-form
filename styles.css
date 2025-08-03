@@ -6,12 +6,14 @@
 * { 
     box-sizing: border-box;
     margin: 0;
+    font-family: Karla;
 }
 
 html, body {
     height: 100vh;
     margin: 0;
-    /* overflow: hidden; */
+    padding: 0;
+    overflow: hidden;
 }
 
 .main { 
@@ -27,12 +29,11 @@ html, body {
     flex: 2;
 }
 
-
 /* left side styling  */
 
 .container-img { 
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 
@@ -96,6 +97,7 @@ html, body {
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    max-height: 100vh;
 }
 
 .top-area-div { 
@@ -126,30 +128,40 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-bottom: 8px; /* TEMP IMPORTANT */ 
-    box-shadow:  5px 5px 10px #888888;
-    /* border: 2px solid green; */
+    z-index: 1;
+    box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.3);
 }
-
-
 
 .label-input label,
 .label-input input {
     display: block;
-    width: 200px;
+    width: 100%;
+    font-weight: bold;
 }
 
-.middle-header > p{ 
+.label-input input { 
+    height: 24px;
+    padding: 0 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.middle-header > p { 
     font-size: 24px;
     font-weight: bold;
     padding-top: 12px;
 }
 
 .all-inputs { 
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     gap: 8px 48px ;
+    padding-bottom: 20px;
 }
+
+.label-input { 
+    width: 40%;
+}   
 /* ---- */
 
 
@@ -161,7 +173,6 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    border: 2px solid green;
 }
 
 .bottom-area-div > button { 
@@ -173,8 +184,15 @@ html, body {
     font-weight: bold;
     border-radius: 8px;
     margin-top: 24px;
+    border-style: none;
 }
 
 .bottom-area-div a { 
     color: #7f344c;
+
 }
+
+.bottom-area-div > p { 
+    font-weight: bold;
+}
+
