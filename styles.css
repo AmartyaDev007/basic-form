@@ -11,7 +11,7 @@
 html, body {
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .main { 
@@ -25,7 +25,6 @@ html, body {
 
 .main-right { 
     flex: 2;
-
 }
 
 
@@ -33,7 +32,7 @@ html, body {
 
 .container-img { 
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -89,3 +88,93 @@ html, body {
     height: auto;
 }
 
+/* right side styles */
+
+.form { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.top-area-div { 
+    flex: 1.3;
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 24px;
+    padding-right: 48px;
+    gap: 24px;
+    font-weight: bold;
+    background-color: #F9FAFB;
+}
+
+.top-area-div p:last-child {
+    margin-bottom: 24px;
+}
+
+/* ---- */
+
+.middle-area-div { 
+    flex: 1;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 8px; /* TEMP IMPORTANT */ 
+    box-shadow:  5px 5px 10px #888888;
+    /* border: 2px solid green; */
+}
+
+
+
+.label-input label,
+.label-input input {
+    display: block;
+    width: 200px;
+}
+
+.middle-header > p{ 
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 12px;
+}
+
+.all-inputs { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 48px ;
+}
+/* ---- */
+
+
+.bottom-area-div { 
+    flex: 1.3;
+    width: 100%;
+    padding-left: 24px;
+    background-color: #F9FAFB;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border: 2px solid green;
+}
+
+.bottom-area-div > button { 
+    width: 200px;
+    color: white;
+    background-color: #7f344c;
+    height: 36px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+.bottom-area-div a { 
+    color: #7f344c;
+}
